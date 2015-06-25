@@ -1,0 +1,18 @@
+<h1>Calculator</h1>
+<div id="calId" ng-controller="CalculatorController">
+    <div ng-controller="DisplayController">
+        <display-view style="width:{{model.width}}" value={{model.value}}>
+        </display-view>
+    </div>
+    <!-- <buttonview number-buttonview></buttonview> -->
+    <span ng-controller="NumberButtonController">
+        <span ng-repeat="btn in NumberButtonModelData.data">
+    	    <number-buttonview value={{btn.value}} class={{btn.className}} ng-click=onNumberButtonClick(btn.value)></number-buttonview>
+        </span>
+    </span>
+    <span ng-controller="OperatorButtonController">
+        <span ng-repeat="btn in OperatorButtonModelData.data">
+    	    <operator-buttonview value={{btn.value}} class={{btn.className}}></operator-buttonview>
+	    </span>
+    </span>
+</div>

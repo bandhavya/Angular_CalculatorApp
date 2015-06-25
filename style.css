@@ -1,0 +1,17 @@
+#calId{
+	width: 195px;
+	height: 200px;
+	border: 1px solid #ccc;
+}
+
+.NumberBtnClass{
+	width: 50px;
+	height: :50px;
+	  margin: 3px;
+}
+
+.OperatorBtnClass,.ClearBtnClass, .equalBtnClass {
+	width: 50px;
+	height: :50px;
+	  margin: 3px;
+}
